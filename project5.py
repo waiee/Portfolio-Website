@@ -1,7 +1,8 @@
 import streamlit as st
-from PIL import image
 
- ####### Header  ####### 
- st.write('Waiee Zainol');
+# Text title
+st.title("Testing Streamlit")
 
- #### will be continued -- print word ###
+#Header/subHeader
+st.header("This is header")
+st.subheader("This is a subheader")
