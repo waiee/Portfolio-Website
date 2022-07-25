@@ -12,3 +12,5 @@ st.text("Hello world")
 
 #Markdown
 st.markdown("### This is a markdown")
+
+#Error/colourful text
