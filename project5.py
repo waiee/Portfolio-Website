@@ -15,9 +15,22 @@ st.markdown("### This is a markdown")
 
 #Error/colourful text
 st.success("Successful!")
-
+#information
 st.info("Information")
+#warning
 st.warning("This is a warning.")
+#error
 st.error("This is a n error!")
-
+#exception
 st.exception("NameError(name three not defined)")
+
+#Get help info about python
+st.help(range)
+
+#writing text
+st.write("Text with write")
+st.write(range(10))
+
+#Images
+from PIL import Image
+img = Image.open("")
