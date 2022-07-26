@@ -19,3 +19,5 @@ st.success("Successful!")
 st.info("Information")
 st.warning("This is a warning.")
 st.error("This is a n error!")
+
+st.exception("NameError(name three not defined)")
