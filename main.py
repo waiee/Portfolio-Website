@@ -37,4 +37,15 @@ img = Image.open("IMG_4825.jpeg")
 st.image(img, width=300, caption="Inilah muka saya")
 
 #Videos
-vid_file = open("")
+vid_file = open("video.mp4","rb").read()
+# vid_bytes = vid_file.read()
+st.video(vid_file)
+
+# Audio
+# audio_file = open("","rb").read()
+# st.audio(audio_file,format='audio/mp3')
+
+#Widget
+#Checkbox
+if st.checkbox("Show/Hide"):
+    st.text("Showing or Hiding Widget")
