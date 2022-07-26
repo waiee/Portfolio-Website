@@ -33,4 +33,5 @@ st.write(range(10))
 
 #Images
 from PIL import Image
-img = Image.open("")
+img = Image.open("IMG_4825.jpeg")
+st.image(img)
