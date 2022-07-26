@@ -34,4 +34,7 @@ st.write(range(10))
 #Images
 from PIL import Image
 img = Image.open("IMG_4825.jpeg")
-st.image(img)
+st.image(img, width=300, caption="Inilah muka saya")
+
+#Videos
+vid_file = open("")
