@@ -49,3 +49,15 @@ st.video(vid_file)
 #Checkbox
 if st.checkbox("Show/Hide"):
     st.text("Showing or Hiding Widget")
+
+#Radio Buttons
+status = st.radio("What is your status",("Active", "Inactive"))
+
+if status == 'Active':
+    st.success("You are Active!")
+else:
+    st.warning("You are inactive.")
+
+#selectBox
+
+#Multiselect
