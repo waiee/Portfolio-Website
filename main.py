@@ -59,5 +59,8 @@ else:
     st.warning("You are inactive.")
 
 #selectBox
+occupation = st.selectbox("Your Occupation", ["Programmer", "Doctor", "Pilot"])
+st.write("You selected this option: ", occupation)
+
 
 #Multiselect
