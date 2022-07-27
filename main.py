@@ -61,6 +61,5 @@ else:
 #selectBox
 occupation = st.selectbox("Your Occupation", ["Programmer", "Doctor", "Pilot"])
 st.write("You selected this option: ", occupation)
-
-
 #Multiselect
+location = st.multiselect("Where do you work?",("London", "New York", "Kelantan", "Keyel"))
