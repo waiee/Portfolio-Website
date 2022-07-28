@@ -90,4 +90,6 @@ if submit:
 import datetime
 today = st.date_input("Today is", datetime.datetime.now())
 
+#Time 
+the_time = st.time_input("The time is", datetime.time())
 
