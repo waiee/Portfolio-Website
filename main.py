@@ -96,3 +96,7 @@ the_time = st.time_input("The time is", datetime.time())
 #Displaying JSON
 st.text("Displaying JSON")
 st.json({'Name':"Waiee",'Gender':"Male"})
+
+#Display RAW code
+st.text("Display Raw Code")
+st.code("import numpy as np")
