@@ -101,7 +101,7 @@ st.json({'Name':"Waiee",'Gender':"Male"})
 st.text("Display Raw Code")
 st.code("import numpy as np")
 
-#Dsiplay raw code
+#Display raw code
 with st.echo():
     #This will also show as a comment
     import pandas as pd
@@ -114,3 +114,8 @@ for p in range(10):
     my_bar.progress(p + 1)
 
 #Spinner
+with st.spinner("Waiting .."):
+    time.sleep(5)
+st.success("Finished!")
+
+#Ballons
