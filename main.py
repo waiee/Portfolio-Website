@@ -119,7 +119,7 @@ with st.spinner("Waiting .."):
 st.success("Finished!")
 
 #Balloons 
-st.balloons()
+# st.balloons()
 
 #SIDEBARS
 st.sidebar.header("About Me")
@@ -131,4 +131,13 @@ st.sidebar.text("Instagram: waiee.z")
 def run_fxn():
     return range(100)
 
-st.write(run_fxn())
+st.write(run_fxn())\
+
+# #Plot 
+# st.pyplot()
+
+# #Dataframes
+# st.dataframe(df)
+
+# #Tables
+# st.table(df)
