@@ -100,3 +100,11 @@ st.json({'Name':"Waiee",'Gender':"Male"})
 #Display RAW code
 st.text("Display Raw Code")
 st.code("import numpy as np")
+
+#Dsiplay raw code
+with st.echo():
+    #This will also show as a comment
+    import pandas as pd
+    df = pd.DataFrame()
+
+#Progress
