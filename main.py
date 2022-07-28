@@ -66,3 +66,9 @@ location = st.multiselect("Where do you work?",("London", "New York", "Kelantan"
 st.write("You selected", len(location),"locations")
 
 #Slider
+level = st.slider("What is you level",1,10)
+
+# Buttons
+st.button("Simple Button")
+if st.button("About"):
+    st.text("Streamlit is fucking cool.")
