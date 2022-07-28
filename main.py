@@ -124,4 +124,5 @@ st.balloons()
 #SIDEBARS
 st.sidebar.header("About Me")
 st.sidebar.header("Contact")
-st.text("Instagram: waiee.z")
+st.sidebar.text("Instagram: waiee.z")
+
