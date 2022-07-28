@@ -75,13 +75,14 @@ if st.button("About"):
 
 #Text input
 firstname = st.text_input("Enter your firstname","Type Here..")
-if st.button("Submit"):
-    result = firstname.title()
-    st.success(result)
+# if st.button("Submit"):
+#     result = firstname.title()
+#     st.success(result)
 
 #Text Area
 message = st.text_area("Enter your message","Type Here..")
-if st.button("Submit"):
+submit = st.button("Submit")
+if submit:
     result = message.title()
     st.success(result)
 
