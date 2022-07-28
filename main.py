@@ -118,4 +118,8 @@ with st.spinner("Waiting .."):
     time.sleep(5)
 st.success("Finished!")
 
-#Ballons
+#Balloons 
+st.balloons()
+
+#SIDEBARS
+st.sidebar.header("About")
