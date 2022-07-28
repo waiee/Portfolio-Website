@@ -126,3 +126,9 @@ st.sidebar.header("About Me")
 st.sidebar.header("Contact")
 st.sidebar.text("Instagram: waiee.z")
 
+#Functions
+@st.cache
+def run_fxn():
+    return range(100)
+
+st.write(run_fxn())
