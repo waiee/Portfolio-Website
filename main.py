@@ -72,3 +72,18 @@ level = st.slider("What is you level",1,10)
 st.button("Simple Button")
 if st.button("About"):
     st.text("Streamlit is fucking cool.")
+
+#Text input
+firstname = st.text_input("Enter your firstname","Type Here..")
+if st.button("Submit"):
+    result = firstname.title()
+    st.success(result)
+
+#Text Area
+message = st.text_area("Enter your message","Type Here..")
+if st.button("Submit"):
+    result = message.title()
+    st.success(result)
+
+
+
