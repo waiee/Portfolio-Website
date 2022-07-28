@@ -107,4 +107,10 @@ with st.echo():
     import pandas as pd
     df = pd.DataFrame()
 
-#Progress
+#Progress Bar
+import time
+my_bar = st.progress(0)
+for p in range(10):
+    my_bar.progress(p + 1)
+
+#Spinner
