@@ -85,5 +85,8 @@ if st.button("Submit"):
     result = message.title()
     st.success(result)
 
+#Date input
+import datetime
+today = st.date_input("Today is", datetime.datetime.now())
 
 
