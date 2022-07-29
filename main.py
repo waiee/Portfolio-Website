@@ -19,4 +19,5 @@ with header:
 with body:
     st.header("This is my body")
 
-
+with foot:
+    st.text("This is my foot")
