@@ -13,7 +13,10 @@ header = st.container()
 body = st.container()
 foot = st.container()
 
-
-
 with header:
     st.title("Welcome to my Website")
+
+with body:
+    st.header("This is my body")
+
+
