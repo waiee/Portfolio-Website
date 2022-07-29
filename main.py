@@ -8,3 +8,7 @@ hide_st_style = """
             </style>
             """
 st.markdown(hide_st_style, unsafe_allow_html=True)
+
+header = st.beta_container()
+with header:
+    st.title("Welcome to my Website")
