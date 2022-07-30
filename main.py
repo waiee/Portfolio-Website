@@ -11,3 +11,16 @@ hide_st_style = """
             """
 st.markdown(hide_st_style, unsafe_allow_html=True)
 
+# Sidebar Menu
+with st.sidebar:
+    selected = option_menu(
+        menu_title="Main Menu",
+        options=["Home, Projects", "Contact Me"],
+    )
+
+if selected == "Home":
+    st.title(f"You have selected {selected}")
+if selected == "Projects":
+    st.title(f"You have selected {selected}")
+if selected == "Contact Me":
+    st.title(f"You have selected {selected}")
