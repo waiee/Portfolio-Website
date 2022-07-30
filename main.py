@@ -1,5 +1,6 @@
 import streamlit as st
 from streamlit_option_menu import option_menu
+from PIL import Image
 
 #### HORIZONTAL MENU#####
 # selected = option_menu(
@@ -35,7 +36,6 @@ with st.sidebar:
 #HomePage
 if selected == "Home":
     st.title(f"{selected}")
-    from PIL import Image
     img = Image.open("IMG_4825.jpeg")
     st.image(img, width=300, caption="")
 
