@@ -36,8 +36,11 @@ with st.sidebar:
 #HomePage
 if selected == "Home":
     st.title(f"{selected}")
+    st.write('''
+    # Waiee Zainol
+    ''')
     img = Image.open("IMG_4825.jpeg")
-    st.image(img, width=300, caption="")
+    st.image(img, width=500, caption="")
 
 #Projects
 if selected == "Projects":
