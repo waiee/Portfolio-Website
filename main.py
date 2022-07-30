@@ -12,17 +12,26 @@ hide_st_style = """
 st.markdown(hide_st_style, unsafe_allow_html=True)
 
 # Sidebar Menu
-with st.sidebar:
-    selected = option_menu(
+# with st.sidebar:
+#     selected = option_menu(
+#         menu_title=None,
+#         options=["Home", "Projects", "Contact Me"],
+#         icons=["house", "book", "telephone"],
+#         default_index=0, #set homepage
+#     )
+
+selected = option_menu(
         menu_title=None,
-        options=["Home", "Projects", "Contact Me"],
+        options=["Home", "Projects", "Contact"],
         icons=["house", "book", "telephone"],
         default_index=0, #set homepage
+        orientation="horizontal",
     )
+
 
 if selected == "Home":
     st.title(f"{selected}")
 if selected == "Projects":
     st.title(f"{selected}")
-if selected == "Contact Me":
+if selected == "Contact":
     st.title(f"{selected}")
