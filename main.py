@@ -1,5 +1,7 @@
 import streamlit as st
+from streamlit_option_menu import option_menu
 
+#Hide logo
 hide_st_style = """
             <style>
             #MainMenu {visibility: hidden;}
@@ -9,15 +11,3 @@ hide_st_style = """
             """
 st.markdown(hide_st_style, unsafe_allow_html=True)
 
-header = st.container()
-body = st.container()
-foot = st.container()
-
-with header:
-    st.title("Welcome to my Website")
-
-with body:
-    st.header("This is my body")
-
-with foot:
-    st.text("This is my foot")
