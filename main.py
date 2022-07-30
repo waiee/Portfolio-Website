@@ -11,22 +11,26 @@ hide_st_style = """
             """
 st.markdown(hide_st_style, unsafe_allow_html=True)
 
-# Sidebar Menu
-# with st.sidebar:
-#     selected = option_menu(
-#         menu_title=None,
-#         options=["Home", "Projects", "Contact Me"],
-#         icons=["house", "book", "telephone"],
-#         default_index=0, #set homepage
-#     )
-
-selected = option_menu(
+Sidebar Menu
+with st.sidebar:
+    selected = option_menu(
         menu_title=None,
-        options=["Home", "Projects", "Contact"],
+        options=["Home", "Projects", "Contact Me"],
         icons=["house", "book", "telephone"],
         default_index=0, #set homepage
-        orientation="horizontal",
     )
+
+#### HORIZONTAL MENU#####
+# selected = option_menu(
+#         menu_title=None,
+#         options=["Home", "Projects", "Contact"],
+#         icons=["house", "book", "telephone"],
+#         default_index=0, #set homepage
+#         orientation="horizontal",
+#         styles={
+#             #will add later
+#         }
+#     )
 
 
 if selected == "Home":
