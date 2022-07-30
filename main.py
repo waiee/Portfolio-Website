@@ -15,7 +15,7 @@ st.markdown(hide_st_style, unsafe_allow_html=True)
 with st.sidebar:
     selected = option_menu(
         menu_title="Main Menu",
-        options=["Home, Projects", "Contact Me"],
+        options=["Home", "Projects", "Contact Me"],
     )
 
 if selected == "Home":
