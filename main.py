@@ -50,4 +50,4 @@ if selected == "Projects":
 #Contact
 if selected == "Contact":
     st.title(f"{selected}")
-    
+    st,write("This is my contact number - 0126275758")
