@@ -44,8 +44,10 @@ if selected == "Home":
 
 #Projects
 if selected == "Projects":
-    st.title(f"{selected}")\
+    st.title(f"{selected}")
+    st.write("This is my project section")
 
 #Contact
 if selected == "Contact":
     st.title(f"{selected}")
+    
