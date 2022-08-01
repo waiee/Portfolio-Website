@@ -1,3 +1,4 @@
+from turtle import right
 import streamlit as st
 from streamlit_option_menu import option_menu
 from PIL import Image
@@ -46,6 +47,14 @@ if selected == "Home":
 
     # img = Image.open("IMG_4825.jpeg")
     # st.image(img, width=500, caption="")
+
+    ### WHAT I DO ###
+    with st.container():
+        st.write("---")
+        left_column, right_column = st.columns(2)
+        with left_column:
+            st.header("What I Do")
+            
 
 #Projects
 if selected == "Projects":
