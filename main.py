@@ -2,6 +2,8 @@ import streamlit as st
 from streamlit_option_menu import option_menu
 from PIL import Image
 
+st.set_page_config(page_title="waieezainol.com", page_icon=":tada:", layout="wide")
+
 #### HORIZONTAL MENU#####
 # selected = option_menu(
 #         menu_title=None,
@@ -36,9 +38,9 @@ with st.sidebar:
 #HomePage
 if selected == "Home":
     st.title(f"{selected}")
-    st.write('''
-    # Waiee Zainol
-    ''')
+
+
+
     img = Image.open("IMG_4825.jpeg")
     st.image(img, width=500, caption="")
 
@@ -50,4 +52,4 @@ if selected == "Projects":
 #Contact
 if selected == "Contact":
     st.title(f"{selected}")
-    st,write("This is my contact number - 0126275758")
+    st.write("This is my contact number - 0126275758")
