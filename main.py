@@ -39,7 +39,7 @@ with st.sidebar:
 if selected == "Home":
     # st.title(f"{selected}")
     st.subheader("Hi, I am Waiee :wave:")
-    st.title("A Future Data Scientist From Malaysia")
+    st.title("Bachelor of Computer Science in Data Science")
     st.write("I am passionate in Data Science, Machine Learning, and Artificial Intelligence.")
     st.write("[Learn More](https://github.com/waiee)")
 
