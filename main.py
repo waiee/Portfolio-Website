@@ -37,11 +37,12 @@ with st.sidebar:
 
 #HomePage
 if selected == "Home":
+    with st.container():
     # st.title(f"{selected}")
-    st.subheader("Hi, I am Waiee :wave:")
-    st.title("Bachelor of Computer Science in Data Science")
-    st.write("I am passionate in Data Science, Machine Learning, and Artificial Intelligence.")
-    st.write("[Learn More](https://github.com/waiee)")
+        st.subheader("Hi, I am Waiee :wave:")
+        st.title("Bachelor of Computer Science in Data Science")
+        st.write("I am passionate in Data Science, Machine Learning, and Artificial Intelligence.")
+        st.write("[Learn More >](https://github.com/waiee)")
 
     # img = Image.open("IMG_4825.jpeg")
     # st.image(img, width=500, caption="")
