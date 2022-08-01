@@ -2,7 +2,7 @@ import streamlit as st
 from streamlit_option_menu import option_menu
 from PIL import Image
 
-st.set_page_config(page_title="waieezainol.com", page_icon=":tada:", layout="wide")
+st.set_page_config(page_title="waieezainol.com", page_icon=":computer:", layout="wide")
 
 #### HORIZONTAL MENU#####
 # selected = option_menu(
