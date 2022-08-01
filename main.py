@@ -54,7 +54,14 @@ if selected == "Home":
         left_column, right_column = st.columns(2)
         with left_column:
             st.header("What I Do")
-            
+            st.write("##")
+            st.write(
+                """
+                Do follow my LinkedIn!
+                """
+            )
+            st.write("[LinkedIn Account >](https://www.linkedin.com/in/waiee-zainol-9b00461ab/)")
+        
 
 #Projects
 if selected == "Projects":
