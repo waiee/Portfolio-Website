@@ -45,9 +45,6 @@ if selected == "Home":
         st.write("I am passionate in Data Science, Machine Learning, and Artificial Intelligence.")
         st.write("[Learn More >](https://github.com/waiee)")
 
-    # img = Image.open("IMG_4825.jpeg")
-    # st.image(img, width=500, caption="")
-
     ### WHAT I DO ###
     with st.container():
         st.write("---")
@@ -66,7 +63,24 @@ if selected == "Home":
 #Projects
 if selected == "Projects":
     st.title(f"{selected}")
-    st.write("This is my project section")
+    with st.container():
+        st.write("---")
+        st.header("My Projects")
+        st.write("##")
+        image_column, text_column = st.columns((1,2))'
+        with image_column:
+            #insert images
+                img = Image.open("IMG_4825.jpeg")
+                st.image(img, width=500, caption="")
+        with text_column:
+            st.subheader("Testis Testis")
+            st.write(
+                """
+                Learn how to use this fucking streamlit.           
+                """
+            )
+            st.markdown("[Tutorial Video...]()")
+
 
 #Contact
 if selected == "Contact":
