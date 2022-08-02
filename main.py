@@ -4,6 +4,7 @@ from streamlit_option_menu import option_menu
 from PIL import Image
 
 st.set_page_config(page_title="waieezainol.com", page_icon=":computer:", layout="wide")
+dp_image = Image.open("IMG_4825.jpeg")
 
 #### HORIZONTAL MENU#####
 # selected = option_menu(
@@ -70,8 +71,7 @@ if selected == "Projects":
         image_column, text_column = st.columns((1,2))'
         with image_column:
             #insert images
-                img = Image.open("IMG_4825.jpeg")
-                st.image(img, width=500, caption="")
+                st.image(dp_image, width=500, caption="")
         with text_column:
             st.subheader("Testis Testis")
             st.write(
