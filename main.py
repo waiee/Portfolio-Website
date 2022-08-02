@@ -96,8 +96,10 @@ if selected == "Contact":
         #Documentation
         contact_form = """
         <form action="https://formsubmit.co/your@email.com" method="POST">
+            <input type="hidden" name="_captcha" value="false">
             <input type="text" name="name" placeholder="Your name" required>
-            <input type="email" name="email" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your message here" required>
             <button type="submit">Send</button>
         </form> 
      """
