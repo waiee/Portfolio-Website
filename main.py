@@ -99,7 +99,7 @@ if selected == "Contact":
             <input type="hidden" name="_captcha" value="false">
             <input type="text" name="name" placeholder="Your name" required>
             <input type="email" name="email" placeholder="Your Email" required>
-            <textarea name="message" placeholder="Your message here" required>
+            <textarea name="message" placeholder="Your message here" required></textarea>
             <button type="submit">Send</button>
         </form> 
      """
