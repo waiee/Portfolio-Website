@@ -73,7 +73,7 @@ if selected == "Projects":
             #insert images
                 st.image(dp_image, caption="")
         with text_column:
-            st.subheader("Testis Testis")
+            st.subheader("This is my fucking project!")
             st.write(
                 """
                 Learn how to use this fucking streamlit.           
@@ -88,4 +88,6 @@ if selected == "Projects":
 # --- CONTACT ---
 if selected == "Contact":
     st.title(f"{selected}")
-    st.write("This is my contact number - 0126275758")
+    with st.container():
+        st.write("---")
+        st.header("Get In Touch With Me!")
