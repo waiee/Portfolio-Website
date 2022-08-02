@@ -91,3 +91,13 @@ if selected == "Contact":
     with st.container():
         st.write("---")
         st.header("Get In Touch With Me!")
+        st.write("##")
+
+        #Documentation
+        contact_form = """
+        <form action="https://formsubmit.co/your@email.com" method="POST">
+            <input type="text" name="name" placeholder="Your name" required>
+            <input type="email" name="email" required>
+            <button type="submit">Send</button>
+        </form> 
+     """
