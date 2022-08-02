@@ -37,7 +37,7 @@ with st.sidebar:
         default_index=0, #set homepage
     )
 
-#HomePage
+# --- HOME ---
 if selected == "Home":
     with st.container():
     # st.title(f"{selected}")
@@ -61,7 +61,7 @@ if selected == "Home":
             st.write("[LinkedIn Account >](https://www.linkedin.com/in/waiee-zainol-9b00461ab/)")
         
 
-#Projects
+# --- PROJECTS ---
 if selected == "Projects":
     st.title(f"{selected}")
     with st.container():
@@ -81,11 +81,11 @@ if selected == "Projects":
             )
             st.markdown("[Tutorial Video...]()")
 
-        #new project
+        #new project section
         
 
 
-#Contact
+# --- CONTACT ---
 if selected == "Contact":
     st.title(f"{selected}")
     st.write("This is my contact number - 0126275758")
