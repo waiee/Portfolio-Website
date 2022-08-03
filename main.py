@@ -16,8 +16,17 @@ def load_lottie(url):
         return None
     return r.json()
 
+#use local CSS
+def local_css(file_name):
+    with open(file_name) as f:
+        st.markdown(f"<style>{f.read()}<style>", unsafe_allow_html=True)
+
+local_css("style.css")
+
 #--- LOAD ASSET ---
 lottie_file = load_lottie("https://assets7.lottiefiles.com/packages/lf20_dlw10cqe.json")
+
+
 #### HORIZONTAL MENU#####
 # selected = option_menu(
 #         menu_title=None,
@@ -50,7 +59,7 @@ if selected == "Home":
             st.write("I am passionate in Data Science, Machine Learning, and Artificial Intelligence.")
             st.write("[Learn More >](https://github.com/waiee)")
         with right_column:
-            st_lottie(lottie_file, height=500 ,key="coding")
+            st_lottie(lottie_file, height=400 ,key="coding")
 
 ### WHAT I DO ###
     with st.container():
