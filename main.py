@@ -6,6 +6,9 @@ from PIL import Image
 st.set_page_config(page_title="waieezainol.com", page_icon=":computer:", layout="wide")
 dp_image = Image.open("image/IMG_4825.jpeg")
 
+#--- LOAD ASSET ---
+lottie_file = "https://assets7.lottiefiles.com/packages/lf20_dlw10cqe.json"
+
 #### HORIZONTAL MENU#####
 # selected = option_menu(
 #         menu_title=None,
@@ -53,9 +56,9 @@ if selected == "Home":
 
 # --- PROJECTS ---
 if selected == "Projects":
-    st.title(f"{selected}")
+    # st.title(f"{selected}")
     with st.container():
-        st.write("---")
+        # st.write("---")
         st.header("My Projects")
         st.write("##")
         image_column, text_column = st.columns((1,2))
