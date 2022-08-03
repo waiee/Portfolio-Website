@@ -18,16 +18,6 @@ dp_image = Image.open("image/IMG_4825.jpeg")
 #         }
 #     )
 
-#Hide logo
-hide_st_style = """
-            <style>
-            #MainMenu {visibility: hidden;}
-            footer {visibility: hidden;}
-            header {visibility: hidden;}
-            </style>
-            """
-st.markdown(hide_st_style, unsafe_allow_html=True)
-
 #Sidebar Menu
 with st.sidebar:
     selected = option_menu(
