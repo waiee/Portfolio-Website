@@ -2,6 +2,7 @@ from turtle import right
 import streamlit as st
 from streamlit_option_menu import option_menu
 from PIL import Image
+from streamlit_lottie import st_lottie
 
 st.set_page_config(page_title="waieezainol.com", page_icon=":computer:", layout="wide")
 dp_image = Image.open("image/IMG_4825.jpeg")
