@@ -49,7 +49,7 @@ if selected == "Home":
             st.write("I am passionate in Data Science, Machine Learning, and Artificial Intelligence.")
             st.write("[Learn More >](https://github.com/waiee)")
         with right_column:
-            st_lottie(lottie_file, key="coding")
+            st_lottie(lottie_file, height=500 ,key="coding")
        
 
 ### WHAT I DO ###
