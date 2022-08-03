@@ -48,20 +48,21 @@ if selected == "Home":
             st.title("Bachelor of Computer Science in Data Science")
             st.write("I am passionate in Data Science, Machine Learning, and Artificial Intelligence.")
             st.write("[Learn More >](https://github.com/waiee)")
+        with right_column:
+            st_lottie(lottie_file, key="coding")
+       
 
 ### WHAT I DO ###
     with st.container():
         st.write("---")
-        left_column, right_column = st.columns(2)
-        with left_column:
-            st.header("What I Do")
-            st.write("##")
-            st.write(
+        st.header("What I Do")
+        st.write("##")
+        st.write(
                 """
                 Do follow my LinkedIn!
                 """
             )
-            st.write("[LinkedIn Account >](https://www.linkedin.com/in/waiee-zainol-9b00461ab/)")
+        st.write("[LinkedIn Account >](https://www.linkedin.com/in/waiee-zainol-9b00461ab/)")
 
 # --- PROJECTS ---
 if selected == "Projects":
@@ -82,7 +83,6 @@ if selected == "Projects":
                 """
             )
             st.markdown("[Tutorial Video...]()")
-
         #new project section
         
 
