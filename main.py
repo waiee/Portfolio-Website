@@ -1,3 +1,4 @@
+from tkinter import font
 from tkinter.messagebox import NO
 from turtle import right
 import requests
@@ -50,7 +51,6 @@ if selected == "Home":
             st.write("[Learn More >](https://github.com/waiee)")
         with right_column:
             st_lottie(lottie_file, height=500 ,key="coding")
-       
 
 ### WHAT I DO ###
     with st.container():
