@@ -8,16 +8,14 @@ from streamlit_lottie import st_lottie
 st.set_page_config(page_title="waieezainol.com", page_icon=":computer:", layout="wide")
 dp_image = Image.open("image/IMG_4825.jpeg")
 
-#--- LOAD ASSET ---
-lottie_file = load_lottieurl("https://assets7.lottiefiles.com/packages/lf20_dlw10cqe.json")
-
-
 def load_lottie(url):
     r = requests.get(url)
     if r.status_code != 200:
         return None
     return r.json()
 
+#--- LOAD ASSET ---
+lottie_file = load_lottie("https://assets7.lottiefiles.com/packages/lf20_dlw10cqe.json")
 #### HORIZONTAL MENU#####
 # selected = option_menu(
 #         menu_title=None,
