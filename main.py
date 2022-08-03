@@ -1,3 +1,4 @@
+from tkinter.messagebox import NO
 from turtle import right
 import streamlit as st
 from streamlit_option_menu import option_menu
@@ -8,7 +9,14 @@ st.set_page_config(page_title="waieezainol.com", page_icon=":computer:", layout=
 dp_image = Image.open("image/IMG_4825.jpeg")
 
 #--- LOAD ASSET ---
-lottie_file = "https://assets7.lottiefiles.com/packages/lf20_dlw10cqe.json"
+lottie_file = load_lottieurl("https://assets7.lottiefiles.com/packages/lf20_dlw10cqe.json")
+
+
+def load_lottie(url):
+    r = requests.get(url)
+    if r.status_code != 200:
+        return None
+    return r.json()
 
 #### HORIZONTAL MENU#####
 # selected = option_menu(
@@ -40,7 +48,7 @@ if selected == "Home":
         st.write("I am passionate in Data Science, Machine Learning, and Artificial Intelligence.")
         st.write("[Learn More >](https://github.com/waiee)")
 
-    ### WHAT I DO ###
+### WHAT I DO ###
     with st.container():
         st.write("---")
         left_column, right_column = st.columns(2)
@@ -53,7 +61,8 @@ if selected == "Home":
                 """
             )
             st.write("[LinkedIn Account >](https://www.linkedin.com/in/waiee-zainol-9b00461ab/)")
-        
+    with right_column:
+        st_lottie(lottie_file, height=300, key="coding")
 
 # --- PROJECTS ---
 if selected == "Projects":
