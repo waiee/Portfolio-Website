@@ -1,5 +1,6 @@
 from tkinter.messagebox import NO
 from turtle import right
+import requests
 import streamlit as st
 from streamlit_option_menu import option_menu
 from PIL import Image
@@ -41,10 +42,12 @@ with st.sidebar:
 if selected == "Home":
     with st.container():
     # st.title(f"{selected}")
-        st.subheader("Hi, I am Waiee :wave:")
-        st.title("Bachelor of Computer Science in Data Science")
-        st.write("I am passionate in Data Science, Machine Learning, and Artificial Intelligence.")
-        st.write("[Learn More >](https://github.com/waiee)")
+        left_column, right_column = st.columns(2)
+        with left_column:
+            st.subheader("Hi, I am Waiee :wave:")
+            st.title("Bachelor of Computer Science in Data Science")
+            st.write("I am passionate in Data Science, Machine Learning, and Artificial Intelligence.")
+            st.write("[Learn More >](https://github.com/waiee)")
 
 ### WHAT I DO ###
     with st.container():
@@ -59,8 +62,6 @@ if selected == "Home":
                 """
             )
             st.write("[LinkedIn Account >](https://www.linkedin.com/in/waiee-zainol-9b00461ab/)")
-    with right_column:
-        st_lottie(lottie_file, height=300, key="coding")
 
 # --- PROJECTS ---
 if selected == "Projects":
