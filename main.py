@@ -37,7 +37,7 @@ def add_bg(image_file):
     <style>
     .stApp {{
         background-image: url(data:image/{"png"};base64,{encoded_string.decode()});
-        background-size: 1000px;
+        background-size: contain;
     }}
     </style>
     """,
@@ -51,7 +51,7 @@ def add_bg(image_file):
 #         icons=["house", "book", "telephone"],
 #         default_index=0, #set homepage
 #         orientation="horizontal",
-#         styles={
+#         styles={      
 #             #will add later
 #         }
 #     )
