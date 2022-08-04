@@ -1,3 +1,4 @@
+from this import d
 from tkinter import font
 from tkinter.messagebox import NO
 from turtle import right
@@ -7,6 +8,8 @@ from streamlit_option_menu import option_menu
 from PIL import Image
 from streamlit_lottie import st_lottie
 
+
+#--- FUNCTION ---
 st.set_page_config(page_title="waieezainol.com", page_icon=":computer:", layout="wide")
 dp_image = Image.open("image/removebgWaiee.png")
 
@@ -27,7 +30,7 @@ local_css("style/style.css")
 #--- LOAD ASSET ---
 lottie_file = load_lottie("https://assets7.lottiefiles.com/packages/lf20_dlw10cqe.json")
 
-#Insert BG URL
+#--- INSERT BG URL ---
 import base64
 
 #PNG BG
@@ -74,6 +77,7 @@ def add_jpgbg(image_file):
 #         }
 #     )
 
+########################################################################################################
 #Sidebar Menu
 with st.sidebar:
     selected = option_menu(
@@ -95,8 +99,29 @@ if selected == "Home":
         with right_column:
             st.subheader("Hi, I am Waiee :wave:")
             st.title("Bachelor of Computer Science in Data Science")
-            st.write("I am passionate in Data Science, Machine Learning, and Artificial Intelligence.")
-            st.write("[Visit My Github Page >](https://github.com/waiee)")
+            st.write("I am passionate in Data Science, Data Analysis, and Machine Learning.")
+            # st.write("[Visit My Github Page >](https://github.com/waiee)")
+            download_cv = st.button("Download CV")
+
+            
+    with open("post1-compressed.pdf", "rb") as pdf_file:
+        PDFbyte = pdf_file.read()
+
+    st.download_button(label="Download PDF Tutorial", 
+        data=PDFbyte,
+        file_name="pandas-clean-id-column.pdf",
+        mime='application/octet-stream')
+
+            # if download_cv:
+                
+                # with open("post1-compressed.pdf", "rb") as pdf_file:
+                #     PDFbyte = pdf_file.read()
+
+                # st.download_button(label="Download PDF Tutorial", 
+                #         data=PDFbyte,
+                #         file_name="pandas-clean-id-column.pdf",
+                #         mime='application/octet-stream')
+
 
 ### WHAT I DO ###
     with st.container():
@@ -110,6 +135,29 @@ if selected == "Home":
             )
             st.write("[LinkedIn Account >](https://www.linkedin.com/in/waiee-zainol-9b00461ab/)")
         #     st_lottie(lottie_file, height=300, key="coding")
+    
+    with st.container():
+        st.write("---")
+        add_jpgbg('image/gradientwp.jpg')
+        # st.write("---")
+        st.header("Get In Touch With Me!")
+        st.write("##")
+
+        #Documentation
+        contact_form = """
+        <form action="https://formsubmit.co/waiee_z@yahoo.com" method="POST">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="text" name="name" placeholder="Your name" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your message here" required></textarea>
+            <button type="submit">Send</button>
+        </form> 
+     """
+    left_column, right_column = st.columns(2)
+    with left_column:
+        st.markdown(contact_form, unsafe_allow_html=True)
+    with right_column:
+        st.empty()
 
 # --- PROJECTS ---
 if selected == "Projects":
