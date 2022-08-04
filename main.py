@@ -28,19 +28,21 @@ local_css("style/style.css")
 lottie_file = load_lottie("https://assets7.lottiefiles.com/packages/lf20_dlw10cqe.json")
 
 #Insert BG URL
-def add_bg():
+import base64
+def add_bg(image_file):
+    with open(image_file, "rb") as image_file:
+        encoded_string = base64.b64encode(image_file.read())
     st.markdown(
-         f"""
-         <style>
-         .stApp {{
-             background-image: url("https://cdn.pixabay.com/photo/2019/04/24/11/27/flowers-4151900_960_720.jpg");
-             background-attachment: fixed;
-             background-size: cover
-         }}
-         </style>
-         """,
-         unsafe_allow_html=True
-     )
+    f"""
+    <style>
+    .stApp {{
+        background-image: url(data:image/{"png"};base64,{encoded_string.decode()});
+        background-size: 1000px;
+    }}
+    </style>
+    """,
+    unsafe_allow_html=True
+    )
 
 #### HORIZONTAL MENU#####
 # selected = option_menu(
@@ -66,6 +68,7 @@ with st.sidebar:
 # --- HOME ---
 if selected == "Home":
     with st.container():
+        add_bg('image/wallpaper1.png')
     # st.title(f"{selected}")
         image_column, right_column = st.columns((1,2))
         with image_column:
@@ -75,7 +78,7 @@ if selected == "Home":
             st.subheader("Hi, I am Waiee :wave:")
             st.title("Bachelor of Computer Science in Data Science")
             st.write("I am passionate in Data Science, Machine Learning, and Artificial Intelligence.")
-            st.write("[Learn More >](https://github.com/waiee)")
+            st.write("[Visit My Github >](https://github.com/waiee)")
         #st_lottie(lottie_file,height=500 ,key="coding")
 
 ### WHAT I DO ###
