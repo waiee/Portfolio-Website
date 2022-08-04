@@ -29,7 +29,9 @@ lottie_file = load_lottie("https://assets7.lottiefiles.com/packages/lf20_dlw10cq
 
 #Insert BG URL
 import base64
-def add_bg(image_file):
+
+#PNG BG
+def add_pngbg(image_file):
     with open(image_file, "rb") as image_file:
         encoded_string = base64.b64encode(image_file.read())
     st.markdown(
@@ -37,6 +39,21 @@ def add_bg(image_file):
     <style>
     .stApp {{
         background-image: url(data:image/{"png"};base64,{encoded_string.decode()});
+        background-size: contain;
+    }}
+    </style>
+    """,
+    unsafe_allow_html=True
+    )
+
+def add_jpgbg(image_file):
+    with open(image_file, "rb") as image_file:
+        encoded_string = base64.b64encode(image_file.read())
+    st.markdown(
+    f"""
+    <style>
+    .stApp {{
+        background-image: url(data:image/{"jpg"};base64,{encoded_string.decode()});
         background-size: contain;
     }}
     </style>
@@ -68,7 +85,7 @@ with st.sidebar:
 # --- HOME ---
 if selected == "Home":
     with st.container():
-        add_bg('image/wallpaper1.png')
+        add_pngbg('image/wallpaper1.png')
     # st.title(f"{selected}")
         image_column, right_column = st.columns((1,2))
         with image_column:
@@ -79,10 +96,10 @@ if selected == "Home":
             st.title("Bachelor of Computer Science in Data Science")
             st.write("I am passionate in Data Science, Machine Learning, and Artificial Intelligence.")
             st.write("[Visit My Github >](https://github.com/waiee)")
-        #st_lottie(lottie_file,height=500 ,key="coding")
 
 ### WHAT I DO ###
     with st.container():
+        add_jpgbg('image/gradientwp.jpg')
         st.write("---")
         st.header("What I Do")
         st.write("##")
@@ -101,7 +118,8 @@ if selected == "Projects":
         st.header("My Projects")
         st.write("##")
         image_column, text_column = st.columns((1,2))
-        # with image_column:
+        with image_column:
+            st_lottie(lottie_file,height=500 ,key="coding")
 
         with text_column:
             st.subheader("This is my fucking project!")
