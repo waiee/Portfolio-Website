@@ -27,6 +27,16 @@ def local_css(file_name):
 
 local_css("style/style.css")
 
+#--- DOWNLOAD PDF ---
+def download_pdf():
+    with open("image/RESUMEWAIEE.pdf", "rb") as pdf_file:
+            PDFbyte = pdf_file.read()
+
+    st.download_button(label="Download CV", 
+            data=PDFbyte,
+            file_name="Waiee_Resume.pdf",
+            mime='application/octet-stream')
+
 #--- LOAD ASSET ---
 lottie_file = load_lottie("https://assets7.lottiefiles.com/packages/lf20_dlw10cqe.json")
 
@@ -101,27 +111,7 @@ if selected == "Home":
             st.title("Bachelor of Computer Science in Data Science")
             st.write("I am passionate in Data Science, Data Analysis, and Machine Learning.")
             # st.write("[Visit My Github Page >](https://github.com/waiee)")
-            download_cv = st.button("Download CV")
-
-            
-    with open("post1-compressed.pdf", "rb") as pdf_file:
-        PDFbyte = pdf_file.read()
-
-    st.download_button(label="Download PDF Tutorial", 
-        data=PDFbyte,
-        file_name="pandas-clean-id-column.pdf",
-        mime='application/octet-stream')
-
-            # if download_cv:
-                
-                # with open("post1-compressed.pdf", "rb") as pdf_file:
-                #     PDFbyte = pdf_file.read()
-
-                # st.download_button(label="Download PDF Tutorial", 
-                #         data=PDFbyte,
-                #         file_name="pandas-clean-id-column.pdf",
-                #         mime='application/octet-stream')
-
+            download_pdf()
 
 ### WHAT I DO ###
     with st.container():
