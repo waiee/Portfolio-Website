@@ -186,6 +186,7 @@ if selected == "Home":
 #--- ABOUT ---
 if selected == "About":
     with st.container():
+        add_jpgbg('image/gradientwp.jpg')
         col1, col2, col3 = st.columns(3)
         with col1:
             show_pdf('image/RESUMEWAIEE.pdf')
