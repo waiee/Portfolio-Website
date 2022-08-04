@@ -86,7 +86,7 @@ with st.sidebar:
 # --- HOME ---
 if selected == "Home":
     with st.container():
-        add_pngbg('image/wallpaper1.png')
+        add_jpgbg('image/gradientwp.jpg')
     # st.title(f"{selected}")
         image_column, right_column = st.columns((1,2))
         with image_column:
@@ -96,13 +96,10 @@ if selected == "Home":
             st.subheader("Hi, I am Waiee :wave:")
             st.title("Bachelor of Computer Science in Data Science")
             st.write("I am passionate in Data Science, Machine Learning, and Artificial Intelligence.")
-            st.write("[Visit My Github >](https://github.com/waiee)")
+            st.write("[Visit My Github Page >](https://github.com/waiee)")
 
 ### WHAT I DO ###
     with st.container():
-        left_column, right_column = st.columns(2)
-        with left_column:
-            add_jpgbg('image/gradientwp.jpg')
             st.write("---")
             st.header("What I Do")
             st.write("##")
@@ -112,12 +109,11 @@ if selected == "Home":
                 """
             )
             st.write("[LinkedIn Account >](https://www.linkedin.com/in/waiee-zainol-9b00461ab/)")
-        with right_column:
-            st_lottie(lottie_file, height=300, key="coding")
+        #     st_lottie(lottie_file, height=300, key="coding")
 
 # --- PROJECTS ---
 if selected == "Projects":
-    add_pngbg('image/wallpaper1.png')
+    add_jpgbg('image/gradientwp.jpg')
     # st.title(f"{selected}")
     with st.container():
         # st.write("---")
@@ -143,7 +139,7 @@ if selected == "Projects":
 if selected == "Contact":
     # st.title(f"{selected}")
     with st.container():
-        add_pngbg('image/wallpaper1.png')
+        add_jpgbg('image/gradientwp.jpg')
         # st.write("---")
         st.header("Get In Touch With Me!")
         st.write("##")
