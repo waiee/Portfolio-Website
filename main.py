@@ -106,7 +106,7 @@ def add_jpgbg(image_file):
 def show_pdf(file_path):
     with open(file_path,"rb") as f:
         base64_pdf = base64.b64encode(f.read()).decode('utf-8')
-    pdf_display = f'<iframe src="data:application/pdf;base64,{base64_pdf}" width="800" height="800" type="application/pdf"></iframe>'
+    pdf_display = f'<iframe src="data:application/pdf;base64,{base64_pdf}" width="1000" height="1000" type="application/pdf"></iframe>'
     st.markdown(pdf_display, unsafe_allow_html=True)
 
 #### HORIZONTAL MENU#####
@@ -126,8 +126,8 @@ def show_pdf(file_path):
 with st.sidebar:
     selected = option_menu(
         menu_title=None,
-        options=["Home", "Projects", "Contact"],
-        icons=["house", "book", "telephone"],
+        options=["Home","About", "Projects", "Contact"],
+        icons=["house","book", "book", "telephone"],
         default_index=0, #set homepage
     )
 
@@ -183,6 +183,17 @@ if selected == "Home":
     with right_column:
         st.empty()
 
+#--- ABOUT ---
+if selected == "About":
+    with st.container():
+        col1, col2, col3 = st.columns(3)
+        with col1:
+            show_pdf('image/RESUMEWAIEE.pdf')
+        with col2:
+            st.write(' ')
+        with col3:
+            st.write(' ')
+
 # --- PROJECTS ---
 if selected == "Projects":
     add_jpgbg('image/gradientwp.jpg')
@@ -196,17 +207,14 @@ if selected == "Projects":
         #     st_lottie(lottie_file,height=500 ,key="coding")
 
         with text_column:
-            st.subheader("This is my fucking project!")
+            st.subheader("This is my first project!")
             st.write(
                 """
-                Learn how to use this fucking streamlit.           
+                Learn how to use this streamlit.           
                 """
             )
             st.markdown("[Tutorial Video...]()")
         #new project section
-    with st.container():
-        show_pdf('image/RESUMEWAIEE.pdf')
-        
 
 
 # --- CONTACT ---
