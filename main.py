@@ -10,7 +10,7 @@ from streamlit_lottie import st_lottie
 st.set_page_config(page_title="waieezainol.com", page_icon=":computer:", layout="wide")
 dp_image = Image.open("image/removebgWaiee.png")
 
-
+#Call LOTTIE Animation
 def load_lottie(url):
     r = requests.get(url)
     if r.status_code != 200:
@@ -27,6 +27,20 @@ local_css("style/style.css")
 #--- LOAD ASSET ---
 lottie_file = load_lottie("https://assets7.lottiefiles.com/packages/lf20_dlw10cqe.json")
 
+#Insert BG URL
+def add_bg():
+    st.markdown(
+         f"""
+         <style>
+         .stApp {{
+             background-image: url("https://cdn.pixabay.com/photo/2019/04/24/11/27/flowers-4151900_960_720.jpg");
+             background-attachment: fixed;
+             background-size: cover
+         }}
+         </style>
+         """,
+         unsafe_allow_html=True
+     )
 
 #### HORIZONTAL MENU#####
 # selected = option_menu(
