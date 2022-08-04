@@ -46,6 +46,7 @@ def add_pngbg(image_file):
     unsafe_allow_html=True
     )
 
+#JPG BG
 def add_jpgbg(image_file):
     with open(image_file, "rb") as image_file:
         encoded_string = base64.b64encode(image_file.read())
@@ -99,27 +100,32 @@ if selected == "Home":
 
 ### WHAT I DO ###
     with st.container():
-        add_jpgbg('image/gradientwp.jpg')
-        st.write("---")
-        st.header("What I Do")
-        st.write("##")
-        st.write(
+        left_column, right_column = st.columns(2)
+        with left_column:
+            add_jpgbg('image/gradientwp.jpg')
+            st.write("---")
+            st.header("What I Do")
+            st.write("##")
+            st.write(
                 """
                 Do follow my LinkedIn!
                 """
             )
-        st.write("[LinkedIn Account >](https://www.linkedin.com/in/waiee-zainol-9b00461ab/)")
+            st.write("[LinkedIn Account >](https://www.linkedin.com/in/waiee-zainol-9b00461ab/)")
+        with right_column:
+            st_lottie(lottie_file, height=300, key="coding")
 
 # --- PROJECTS ---
 if selected == "Projects":
+    add_pngbg('image/wallpaper1.png')
     # st.title(f"{selected}")
     with st.container():
         # st.write("---")
         st.header("My Projects")
         st.write("##")
         image_column, text_column = st.columns((1,2))
-        with image_column:
-            st_lottie(lottie_file,height=500 ,key="coding")
+        # with image_column:
+        #     st_lottie(lottie_file,height=500 ,key="coding")
 
         with text_column:
             st.subheader("This is my fucking project!")
@@ -137,6 +143,7 @@ if selected == "Projects":
 if selected == "Contact":
     # st.title(f"{selected}")
     with st.container():
+        add_pngbg('image/wallpaper1.png')
         # st.write("---")
         st.header("Get In Touch With Me!")
         st.write("##")
