@@ -223,9 +223,9 @@ if selected == "Github":
     add_jpgbg('image/gradientwp.jpg')
 
     import time
+    st.success("Redirecting to Github... ")
     with st.spinner("Waiting .."):
         time.sleep(2)
-    st.success("Redirecting to Github... ")
     import webbrowser
     url = 'https://github.com/waiee'
     webbrowser.open_new_tab(url)
