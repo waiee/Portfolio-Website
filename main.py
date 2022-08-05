@@ -163,7 +163,7 @@ if selected == "Home":
                 """
             )
             # st.write("[LinkedIn Account >](https://www.linkedin.com/in/waiee-zainol-9b00461ab/)")
-            st_lottie(lottie_file, height=500, key="coding")
+            st_lottie(lottie_file, height=400, key="coding")
     
     with st.container():
         st.write("---")
