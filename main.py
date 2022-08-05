@@ -127,7 +127,7 @@ with st.sidebar:
     selected = option_menu(
         menu_title=None,
         options=["Home","Resume", "Projects", "Github", "Contact"],
-        icons=["house","book", "book","github","telephone"],
+        icons=["house","briefcase", "book","github","telephone"],
         default_index=0, #set homepage
     )
 
