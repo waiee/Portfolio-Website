@@ -126,7 +126,7 @@ def show_pdf(file_path):
 with st.sidebar:
     selected = option_menu(
         menu_title=None,
-        options=["Home","About", "Projects", "Contact"],
+        options=["Home","Resume", "Projects", "Contact"],
         icons=["house","book", "book", "telephone"],
         default_index=0, #set homepage
     )
@@ -184,7 +184,7 @@ if selected == "Home":
         st.empty()
 
 #--- ABOUT ---
-if selected == "About":
+if selected == "Resume":
     with st.container():
         add_jpgbg('image/gradientwp.jpg')
         col1, col2, col3 = st.columns(3)
