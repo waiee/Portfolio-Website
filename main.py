@@ -220,10 +220,15 @@ if selected == "Projects":
 # --- GITHUB ---
 if selected == "Github":
     add_jpgbg('image/gradientwp.jpg')
-    st.success("Redirecting to Github")
+
+    import time
+    with st.spinner("Waiting .."):
+        time.sleep(2)
+    st.success("Redirecting to Github... ")
     import webbrowser
     url = 'https://www.streamlit.io/'
     webbrowser.open_new_tab(url)
+    st.success("Successfull.")
     
 
 # --- CONTACT ---
