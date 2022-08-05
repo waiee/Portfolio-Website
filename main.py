@@ -225,7 +225,7 @@ if selected == "Github":
     import time
     st.success("Redirecting to Github... ")
     with st.spinner("Waiting .."):
-        time.sleep(2)
+        time.sleep(1)
     import webbrowser
     url = 'https://github.com/waiee'
     webbrowser.open_new_tab(url)
