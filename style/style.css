@@ -24,7 +24,6 @@ input[type=message], input[type=email], input[type=text], textarea {
     background-color: #45a049;
   }
   
-  
   /* Hide Streamlit Branding */
   #MainMenu {visibility: hidden;}
   footer {visibility: hidden;}

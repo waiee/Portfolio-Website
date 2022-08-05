@@ -144,7 +144,6 @@ if selected == "Home":
             st.subheader("Hi, I am Waiee :wave:")
             st.title("Bachelor of Computer Science in Data Science")
             st.write("I am passionate in Data Science, Data Analysis, and Machine Learning.")
-            # st.write("[Visit My Github Page >](https://github.com/waiee)")
             download_pdf()
 
 ### WHAT I DO ###
@@ -163,8 +162,8 @@ if selected == "Home":
                 Let’s grow together! Feel free to get in touch about a new project or opportunity to discuss. Hopefully, we can collaborate and learn together.
                 """
             )
-            st.write("[LinkedIn Account >](https://www.linkedin.com/in/waiee-zainol-9b00461ab/)")
-        #     st_lottie(lottie_file, height=300, key="coding")
+            # st.write("[LinkedIn Account >](https://www.linkedin.com/in/waiee-zainol-9b00461ab/)")
+            st_lottie(lottie_file, height=500, key="coding")
     
     with st.container():
         st.write("---")
