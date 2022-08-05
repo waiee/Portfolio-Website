@@ -154,7 +154,13 @@ if selected == "Home":
             st.write("##")
             st.write(
                 """
-                Do follow my LinkedIn!
+                Welcome!
+
+                I am a 2nd year Computer Science student at Multimedia University Cyberjaya. Love to exchange ideas, meet new people, eager to learn and have heavy discussions. 
+
+                Currently exploring various tech-related fields such as Data Science, Big Data, AI , Machine Learning.
+
+                Let’s grow together! Feel free to get in touch about a new project or opportunity to discuss. Hopefully, we can collaborate and learn together.
                 """
             )
             st.write("[LinkedIn Account >](https://www.linkedin.com/in/waiee-zainol-9b00461ab/)")
