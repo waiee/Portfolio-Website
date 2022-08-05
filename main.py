@@ -183,8 +183,9 @@ if selected == "Home":
     with right_column:
         st.empty()
 
-#--- ABOUT ---
+#--- RESUME ---
 if selected == "Resume":
+    st.header("My Resume")
     with st.container():
         add_jpgbg('image/gradientwp.jpg')
         col1, col2, col3 = st.columns(3)
@@ -226,7 +227,7 @@ if selected == "Github":
         time.sleep(2)
     st.success("Redirecting to Github... ")
     import webbrowser
-    url = 'https://www.streamlit.io/'
+    url = 'https://github.com/waiee'
     webbrowser.open_new_tab(url)
     st.success("Successfull.")
     
