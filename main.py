@@ -148,7 +148,9 @@ if selected == "Home":
 
 ### WHAT I DO ###
     with st.container():
-            st.write("---")
+        st.write("---")
+        text_column, image_column = st.columns((2,1))
+        with text_column:
             st.header("What I Do")
             st.write("##")
             st.write(
@@ -163,6 +165,7 @@ if selected == "Home":
                 """
             )
             # st.write("[LinkedIn Account >](https://www.linkedin.com/in/waiee-zainol-9b00461ab/)")
+        with image_column:
             st_lottie(lottie_file, height=400, key="coding")
     
     with st.container():
