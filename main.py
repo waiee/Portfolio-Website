@@ -126,8 +126,8 @@ def show_pdf(file_path):
 with st.sidebar:
     selected = option_menu(
         menu_title=None,
-        options=["Home","Resume", "Projects", "Contact"],
-        icons=["house","book", "book", "telephone"],
+        options=["Home","Resume", "Projects", "Github", "Contact"],
+        icons=["house","book", "book","github","telephone"],
         default_index=0, #set homepage
     )
 
@@ -217,6 +217,14 @@ if selected == "Projects":
             st.markdown("[Tutorial Video...]()")
         #new project section
 
+# --- GITHUB ---
+if selected == "Github":
+    add_jpgbg('image/gradientwp.jpg')
+    st.success("Redirecting to Github")
+    import webbrowser
+    url = 'https://www.streamlit.io/'
+    webbrowser.open_new_tab(url)
+    
 
 # --- CONTACT ---
 if selected == "Contact":
