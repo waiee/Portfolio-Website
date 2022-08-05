@@ -126,8 +126,8 @@ def show_pdf(file_path):
 with st.sidebar:
     selected = option_menu(
         menu_title=None,
-        options=["Home","Resume", "Projects", "Github", "Contact"],
-        icons=["house","briefcase", "book","github","telephone"],
+        options=["Home","Resume", "Github", "Contact"],
+        icons=["house","briefcase","github","telephone"],
         default_index=0, #set homepage
     )
 
@@ -169,9 +169,9 @@ if selected == "Home":
             st_lottie(lottie_file, height=400, key="coding")
     
     with st.container():
-        st.write("---")
-        add_jpgbg('image/gradientwp.jpg')
         # st.write("---")
+        add_jpgbg('image/gradientwp.jpg')
+        st.write("---")
         st.header("Get In Touch With Me!")
         st.write("##")
 
@@ -204,27 +204,27 @@ if selected == "Resume":
         with col3:
             st.write(' ')
 
-# --- PROJECTS ---
-if selected == "Projects":
-    add_jpgbg('image/gradientwp.jpg')
-    # st.title(f"{selected}")
-    with st.container():
-        # st.write("---")
-        st.header("My Projects")
-        st.write("##")
-        image_column, text_column = st.columns((1,2))
-        # with image_column:
-        #     st_lottie(lottie_file,height=500 ,key="coding")
+# # --- PROJECTS ---
+# if selected == "Projects":
+#     add_jpgbg('image/gradientwp.jpg')
+#     # st.title(f"{selected}")
+#     with st.container():
+#         # st.write("---")
+#         st.header("My Projects")
+#         st.write("##")
+#         image_column, text_column = st.columns((1,2))
+#         # with image_column:
+#         #     st_lottie(lottie_file,height=500 ,key="coding")
 
-        with text_column:
-            st.subheader("This is my first project!")
-            st.write(
-                """
-                Learn how to use this streamlit.           
-                """
-            )
-            st.markdown("[Tutorial Video...]()")
-        #new project section
+#         with text_column:
+#             st.subheader("This is my first project!")
+#             st.write(
+#                 """
+#                 Learn how to use this streamlit.           
+#                 """
+#             )
+#             st.markdown("[Tutorial Video...]()")
+#         #new project section
 
 # --- GITHUB ---
 if selected == "Github":
