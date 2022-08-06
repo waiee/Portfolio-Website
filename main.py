@@ -1,4 +1,6 @@
 from turtle import onclick
+import tkinter as TK
+import _tkinter
 import requests
 import streamlit as st
 from streamlit_option_menu import option_menu
