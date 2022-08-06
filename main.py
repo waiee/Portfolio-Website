@@ -166,7 +166,7 @@ if selected == "Home":
                 Let’s grow together! Feel free to get in touch about a new project or opportunity to discuss. Hopefully, we can collaborate and learn together.
                 """
             )
-            st.write("Check out [my Github >]('https://github.com/waiee')")
+            st.write("Check out my [Github]('https://github.com/waiee')")
 
         with image_column:
             st_lottie(lottie_file, height=400, key="coding")
