@@ -67,7 +67,7 @@ lottie_file = load_lottie("https://assets7.lottiefiles.com/packages/lf20_dlw10cq
 def open_github():
     import webbrowser
     url = 'https://github.com/waiee'
-    webbrowser.open_new_tab(url)
+    webbrowser.open(url)
 
 #--- INSERT BG URL ---
 import base64
