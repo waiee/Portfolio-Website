@@ -1,3 +1,4 @@
+from bokeh.models.widgets import Div
 import requests
 import streamlit as st
 from streamlit_option_menu import option_menu
@@ -230,9 +231,15 @@ if selected == "Github":
     st.success("Redirecting to Github... ")
     with st.spinner("Waiting .."):
         time.sleep(1)
-    import webbrowser
-    url = 'https://github.com/waiee'
-    webbrowser.open_new_tab(url)
+    # import webbrowser
+    # url = 'https://github.com/waiee'
+    # webbrowser.open_new_tab(url)
+    # st.success("Successfull.")
+    js = "window.open('https://www.streamlit.io/')"  # New tab or window
+    js = "window.location.href = 'https://www.streamlit.io/'"  # Current tab
+    html = '<img src onerror="{}">'.format(js)
+    div = Div(text=html)
+    st.bokeh_chart(div)
     st.success("Successfull.")
     
 
