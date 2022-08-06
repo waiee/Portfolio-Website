@@ -1,3 +1,4 @@
+from turtle import onclick
 import requests
 import streamlit as st
 from streamlit_option_menu import option_menu
@@ -166,7 +167,7 @@ if selected == "Home":
                 Let’s grow together! Feel free to get in touch about a new project or opportunity to discuss. Hopefully, we can collaborate and learn together.
                 """
             )
-            st.button("My Github")
+            st.button("My Github", on_click=open_github())
             if "My Github":
                 open_github()
 
