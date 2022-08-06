@@ -1,7 +1,3 @@
-from this import d
-from tkinter import font
-from tkinter.messagebox import NO
-from turtle import right
 import requests
 import streamlit as st
 from streamlit_option_menu import option_menu
