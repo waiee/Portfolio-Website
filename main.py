@@ -122,8 +122,8 @@ def show_pdf(file_path):
 with st.sidebar:
     selected = option_menu(
         menu_title=None,
-        options=["Home","Resume", "Github", "Contact"],
-        icons=["house","briefcase","github","telephone"],
+        options=["Home", "Github", "Contact"],
+        icons=["house","github","telephone"],
         default_index=0, #set homepage
     )
 
@@ -188,17 +188,17 @@ if selected == "Home":
         st.empty()
 
 #--- RESUME ---
-if selected == "Resume":
-    st.header("My Resume")
-    with st.container():
-        add_jpgbg('image/gradientwp.jpg')
-        col1, col2, col3 = st.columns(3)
-        with col1:
-            show_pdf('image/RESUMEWAIEE.pdf')
-        with col2:
-            st.write(' ')
-        with col3:
-            st.write(' ')
+# if selected == "Resume":
+#     st.header("My Resume")
+#     with st.container():
+#         add_jpgbg('image/gradientwp.jpg')
+#         col1, col2, col3 = st.columns(3)
+#         with col1:
+#             show_pdf('image/RESUMEWAIEE.pdf')
+#         with col2:
+#             st.write(' ')
+#         with col3:
+#             st.write(' ')
 
 # # --- PROJECTS ---
 # if selected == "Projects":
