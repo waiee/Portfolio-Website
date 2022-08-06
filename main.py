@@ -235,8 +235,9 @@ if selected == "Github":
     # url = 'https://github.com/waiee'
     # webbrowser.open_new_tab(url)
     # st.success("Successfull.")
-    js = "window.open('https://www.streamlit.io/')"  # New tab or window
-    js = "window.location.href = 'https://www.streamlit.io/'"  # Current tab
+    
+    js = "window.open('https://github.com/waiee')"  # New tab or window
+    # js = "window.location.href = 'https://www.streamlit.io/'"  # Current tab
     html = '<img src onerror="{}">'.format(js)
     div = Div(text=html)
     st.bokeh_chart(div)
