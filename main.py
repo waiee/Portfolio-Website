@@ -63,6 +63,12 @@ def download_pdf():
 #--- LOAD ASSET ---
 lottie_file = load_lottie("https://assets7.lottiefiles.com/packages/lf20_dlw10cqe.json")
 
+#--- OPEN GITHUB ---
+def open_github():
+    import webbrowser
+    url = 'https://github.com/waiee'
+    webbrowser.open_new_tab(url)
+
 #--- INSERT BG URL ---
 import base64
 
@@ -230,9 +236,7 @@ if selected == "Github":
     st.success("Redirecting to Github... ")
     with st.spinner("Waiting .."):
         time.sleep(1)
-    import webbrowser
-    url = 'https://github.com/waiee'
-    webbrowser.open_new_tab(url)
+    open_github()
     st.success("Successfull.")
     
 
