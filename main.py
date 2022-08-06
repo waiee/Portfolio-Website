@@ -166,7 +166,10 @@ if selected == "Home":
                 Let’s grow together! Feel free to get in touch about a new project or opportunity to discuss. Hopefully, we can collaborate and learn together.
                 """
             )
-            # st.write("[LinkedIn Account >](https://www.linkedin.com/in/waiee-zainol-9b00461ab/)")
+            st.button("My Github")
+            if "My Github":
+                open_github()
+
         with image_column:
             st_lottie(lottie_file, height=400, key="coding")
     
